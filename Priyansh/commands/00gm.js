@@ -18,18 +18,15 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
      react.includes("Morning") ||
 react.includes("morning")) {
     var msg = {
-        body: `
- ╔══❉্᭄͜͡💕❉্᭄͜͡💕❉্᭄͜͡════╗
-❉্᭄͜͡💕      Good Morning     💕❉্᭄͜͡      
-   🅑🅔🅐🅤🅣🅘🅕🅤🅛 
-🌸       🅜🅞🅡🅝🅘🅝🅖🤩       
- ╚══❉্᭄͜͡💕❉্᭄͜͡💕❉্᭄͜͡════╝
-.          💕 Uth jao gays💓
-.•°``°•.¸.•°``°•.
-(  Morning  )  ☔ ❄
- `•.¸  💓   ¸.•`  🌹 🌹 💚
-     ° •.¸¸.•° Good 
-                          Sweet Morning 🍬💓🍬💓`,attachment: fs.createReadStream(__dirname + `/noprefix/gm.jpg`)
+        body: `||••♦• 𝐑𝐚𝐝𝐡𝐞 𝐑𝐚𝐝𝐡𝐞 •♦••||
+
+         ┊                 ┊ 
+
+ღ꧁ღ╭⊱ꕥ𝐌𝐨𝐫𝐧𝐢𝐧𝐠ꕥ⊱╮ღ꧂ღ  
+
+      ⊰᯽⊱┈──╌❊╌──┈⊰᯽⊱
+
+      🥀⊱ꕥ𝐉𝐚𝐢 𝐌𝐚𝐡𝐚𝐤𝐚𝐥ꕥ⊱`,attachment: fs.createReadStream(__dirname + `/noprefix/gm.jpg`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😈", event.messageID, (err) => {}, true)
