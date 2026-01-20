@@ -19,7 +19,7 @@ module.exports.handleEvent = async function({ api, event }) {
   // STEP 1: Trigger "bot"
   if (body && body.trim().toLowerCase() === "bot") {
     global.botSessions[threadID] = true;
-    return api.sendMessage("Bolo jaanu 😏 kya haal hai?","bot bot laga rakhi ha tujhe koi masla😼😼","Mera pas sarmaya hota ap ko 2 sall pehla le jata🥺🫠🫂", threadID, messageID);
+    return api.sendMessage("Bolo jaanu 😏 kya haal hai?", threadID, messageID);
   }
 
   // STEP 2: Only active session
