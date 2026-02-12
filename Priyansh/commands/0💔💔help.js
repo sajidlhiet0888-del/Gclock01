@@ -116,7 +116,7 @@ const first = numberOfOnePage * page - numberOfOnePage;
   } 
 const leiamname = getText("moduleInfo", command.config.name, command.config.description, `${(command.config.usages) ? command.config.usages : ""}`, command.config.commandCategory, command.config.cooldowns, ((command.config.hasPermssion == 0) ? getText("user") : (command.config.hasPermssion == 1) ? getText("adminGroup") : getText("adminBot")), command.config.credits);
 
-  var link = [ "https://i.imgur.com/YTyea7O.jpeg", 
+  var link = [ "https://i.imgur.com/oWVAjND.jpeg", 
   "https://i.imgur.com/oWVAjND.jpeg"
   ]
     var callback = () => api.sendMessage({ body: leiamname, attachment: fs.createReadStream(__dirname + "/cache/leiamnashelp.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/leiamnashelp.jpg"), event.messageID);
